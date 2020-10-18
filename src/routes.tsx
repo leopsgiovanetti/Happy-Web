@@ -6,6 +6,10 @@ import Landing from './pages/Landing'
 import OrphanagesMap from './pages/OrphanagesMap'
 import Orphanage from './pages/Orphanage'
 import CreateOrphanage from './pages/CreateOrphanage'
+import Login from './pages/Login';
+import ForgotPassword from './pages/ForgotPassword';
+import RedefinePassword from './pages/RedefinePassword';
+
 
 function Routes(){
     return(
@@ -13,7 +17,9 @@ function Routes(){
             <Switch>
                 <Route path="/" exact component={Landing} />
                 <Route path="/map" component={OrphanagesMap} />
-                
+                <Route path="/login" component={Login} />
+                <Route path="/forgotpassword" component={ForgotPassword} />
+                <Route path="/redefinepassword" component={RedefinePassword} />
                 <Route path="/orphanages/create" component={CreateOrphanage} />
                 <Route path="/orphanages/:id" component={Orphanage} />
             </Switch>            
